@@ -3,11 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/billy/AndroidStudioProjects/BattleShip2/app/src/main/res/drawable-v24/ic_manual.xml" value="0.1035" />
+        <entry key="..\:/Users/billy/AndroidStudioProjects/BattleShip2/app/src/main/res/drawable-v24/ic_play_game.xml" value="0.1035" />
+        <entry key="..\:/Users/billy/AndroidStudioProjects/BattleShip2/app/src/main/res/drawable-v24/ic_random.xml" value="0.1035" />
         <entry key="..\:/Users/billy/AndroidStudioProjects/BattleShip2/app/src/main/res/layout/activity_game.xml" value="0.1" />
         <entry key="..\:/Users/billy/AndroidStudioProjects/BattleShip2/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/Users/billy/AndroidStudioProjects/BattleShip2/app/src/main/res/layout/activity_main.xml" value="0.14722222222222223" />
         <entry key="..\:/Users/billy/AndroidStudioProjects/BattleShip2/app/src/main/res/layout/activity_rooms.xml" value="0.1" />
-        <entry key="..\:/Users/billy/AndroidStudioProjects/BattleShip2/app/src/main/res/layout/activity_setup.xml" value="0.11" />
+        <entry key="..\:/Users/billy/AndroidStudioProjects/BattleShip2/app/src/main/res/layout/activity_setup.xml" value="0.1" />
         <entry key="..\:/Users/billy/AndroidStudioProjects/BattleShip2/app/src/main/res/layout/board_cell.xml" value="0.1" />
         <entry key="..\:/Users/billy/AndroidStudioProjects/BattleShip2/app/src/main/res/layout/ship_item.xml" value="0.1" />
       </map>
