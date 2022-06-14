@@ -11,9 +11,9 @@ import java.net.InetSocketAddress
 import java.net.Socket
 import java.util.concurrent.Executors
 
-class ClientClass(hostAddress: InetAddress): Thread() {
+class ClientClass : Thread() {
 
-    var hostAddress: String = hostAddress.hostAddress
+    var hostAddress: String = "35.170.245.217"
     lateinit var inputStream: InputStream
     lateinit var outputStream: OutputStream
     lateinit var socket: Socket
@@ -29,7 +29,7 @@ class ClientClass(hostAddress: InetAddress): Thread() {
     override fun run() {
         try {
             socket = Socket()
-            socket.connect(InetSocketAddress(hostAddress,8888),500)
+            socket.connect(InetSocketAddress(hostAddress,9999),500)
             inputStream = socket.getInputStream()
             outputStream = socket.getOutputStream()
         }catch (ex: IOException){
