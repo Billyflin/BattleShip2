@@ -11,7 +11,6 @@ import com.spm.battleship.conf.Init_data.Companion.prefs
 import com.spm.battleship.ui.login.LoginActivity
 import com.spm.battleship.ui.rooms.RoomsActivity
 
-
 class MainActivity : AppCompatActivity() {
     companion object {
         lateinit var conection :ClientClass
