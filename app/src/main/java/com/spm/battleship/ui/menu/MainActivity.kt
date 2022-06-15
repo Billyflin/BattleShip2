@@ -6,8 +6,7 @@ import android.os.StrictMode
 import android.os.StrictMode.ThreadPolicy
 import androidx.appcompat.app.AppCompatActivity
 import com.spm.battleship.R
-import com.spm.battleship.conections.Client2
-import com.spm.battleship.conections.ClientClass
+
 import com.spm.battleship.conf.Init_data.Companion.prefs
 import com.spm.battleship.ui.login.LoginActivity
 import com.spm.battleship.ui.rooms.RoomsActivity
@@ -18,7 +17,7 @@ import kotlinx.coroutines.withContext
 
 class MainActivity : AppCompatActivity() {
     companion object {
-        lateinit var conection :Client2
+
         const val ME_PLAYER = "ME_PLAYER"
         const val ROOM_NAME = "ROOM_NAME"
         const val ROLE_NAME = "ROLE_NAME"
@@ -32,8 +31,8 @@ class MainActivity : AppCompatActivity() {
         StrictMode.setThreadPolicy(policy)
         GlobalScope.launch(Dispatchers.Main) {
             withContext(Dispatchers.IO){
-                conection=Client2()
-                conection.run()
+
+
             }
         }
         accessToDetail()
