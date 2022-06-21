@@ -1,7 +1,7 @@
 package com.spm.battleship.ui.rooms
 
 data class Salas (
-    val Sala:String,
+    val ip:String,
     val nombreUsuario:String,
-    val photo:String
+    val photo:String="https://www.pngwing.com/es/free-png-vdxas"
     )

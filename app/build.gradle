@@ -38,10 +38,12 @@ android {
 
 dependencies {
     implementation 'io.ktor:ktor-network:1.6.0'
+    implementation 'com.github.bumptech.glide:glide:4.13.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.13.0'
     implementation 'com.facebook.shimmer:shimmer:0.5.0'
     implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.29'
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.2")
-    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.12.12'
     implementation 'androidx.appcompat:appcompat:1.4.2'
     implementation 'androidx.core:core-ktx:1.8.0'
     implementation 'androidx.appcompat:appcompat:1.4.2'

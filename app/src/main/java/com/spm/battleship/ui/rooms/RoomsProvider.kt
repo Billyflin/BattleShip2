@@ -2,7 +2,7 @@ package com.spm.battleship.ui.rooms
 
 class RoomsProvider {
     companion object{
-        val ListSalas= listOf<Salas>(
+        val ListSalas= mutableListOf(
             Salas(
                 "PicoPalQueLee",
                 "Danko",
@@ -20,5 +20,8 @@ class RoomsProvider {
             )
 
         )
+    }
+    fun addSala(ip:String,nombreUsuario:String){
+        ListSalas.add(Salas(ip,nombreUsuario))
     }
 }
