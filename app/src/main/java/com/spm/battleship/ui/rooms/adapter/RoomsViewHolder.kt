@@ -17,6 +17,6 @@ class RoomsViewHolder(view:View):RecyclerView.ViewHolder(view) {
     fun render(salasModel: Salas){
         ip.text=salasModel.ip
         nombreUsuario.text=salasModel.nombreUsuario
-        Glide.with(photo.context).load(salasModel.photo).into(photo)
+//        Glide.with(photo.context).load(salasModel.photo).into(photo)
     }
 }

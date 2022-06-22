@@ -21,7 +21,6 @@ class Init_data : Application() {
         val policy = StrictMode.ThreadPolicy.Builder().permitAll().build()
         StrictMode.setThreadPolicy(policy)
         prefs= Prefs(this)
-        prefs.saveUserName("Real")
         viewModel.data.observeForever() { data ->
             val values = data.split(';')
             println(values)

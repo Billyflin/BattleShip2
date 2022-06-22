@@ -23,7 +23,7 @@ class MainViewModel() : ViewModel() {
 
     init {
         try {
-            client = Socket("192.168.1.82", 9999)
+            client = Socket("44.203.68.51", 9999)
             reader = Scanner(client.getInputStream())
             writer = client.getOutputStream()
 //            button2.setOnClickListener{

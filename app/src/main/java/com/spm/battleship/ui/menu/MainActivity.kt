@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        prefs.wipe()
         accessToDetail()
 
     }
@@ -26,7 +27,7 @@ class MainActivity : AppCompatActivity() {
 
 
     private fun accessToDetail(){
-        if(prefs.getUsername().isEmpty()){
+        if(prefs.getUsername().isBlank()){
             launchLoginActivity()
         }else{
             launchRoomsActivity()
