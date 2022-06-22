@@ -2,6 +2,7 @@ package com.spm.battleship.ui.menu
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import com.spm.battleship.conf.Init_data.Companion.prefs
 import androidx.lifecycle.ViewModel
 import com.spm.battleship.databinding.ActivityMainBinding
 import kotlinx.coroutines.*
@@ -12,7 +13,7 @@ import java.util.*
 
 
 @OptIn(DelicateCoroutinesApi::class)
-class MainViewModel(binding: ActivityMainBinding) : ViewModel() {
+class MainViewModel() : ViewModel() {
     private val scope: CoroutineScope = CoroutineScope(newSingleThreadContext("Conection"))
     private lateinit var client: Socket
     private lateinit var reader: Scanner
@@ -25,10 +26,12 @@ class MainViewModel(binding: ActivityMainBinding) : ViewModel() {
             client = Socket("192.168.1.82", 9999)
             reader = Scanner(client.getInputStream())
             writer = client.getOutputStream()
-            button2.setOnClickListener{
-                val text=binding.editTextTextPersonName.text.toString()
-                write(text)
-            }
+//            button2.setOnClickListener{
+//                val text=binding.editTextTextPersonName.text.toString()
+//                write(text)
+//            }
+            firstData()
+            getSalas()
             conect()
         } catch (e: Exception) {
             e.printStackTrace()
@@ -36,6 +39,15 @@ class MainViewModel(binding: ActivityMainBinding) : ViewModel() {
 
         }
     }
+
+    private fun getSalas() {
+        write("Sala")
+    }
+
+    private fun firstData() {
+        write("addSala ${prefs.getUsername()}")
+    }
+
     private fun write(message: String) {
         writer.write((message + '\n').toByteArray(Charset.defaultCharset()))
     }
